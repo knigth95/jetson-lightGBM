@@ -45,7 +45,7 @@
 └── main
 |   ├── upload (内容上传客户端相关)
 |       │   ├── get_token.py
-|       
+|       │   ├── get_upload_url.py
 |       │   ├── parse_form.py
 |       │   └── upload.py
 |   ├── generate_distribution_features.py
