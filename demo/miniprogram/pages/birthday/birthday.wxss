@@ -1,0 +1,19 @@
+/* pages/birthday/birthday.wxss */
+.arrow{
+  width: 30rpx;
+  height: 30rpx;
+  border-top: 4rpx solid rgb(19, 19, 19);
+  border-right: 4rpx solid rgb(19, 19, 19);
+  /* 旋转45度 */
+  transform: rotate(225deg);
+  /* 调整位置 */
+  position: absolute;
+  left: 20rpx;
+  top: 90rpx;
+}
+
+page {
+    background:#f0cdd8;
+    width: 100%;
+    height: 100%;
+  }

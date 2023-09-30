@@ -1,0 +1,52 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+    <view slot="content">睡眠心率</view>
+</cu-custom>
+<view class="body" style="box-sizing: border-box;">
+    <view class="date-view" style="position: relative; left: 0rpx; top: 10rpx">
+        <button class="date-button" bindtap="showDatePicker" style="position: relative; left: 0rpx; top: -3rpx; width: 715rpx; height: 80rpx; display: block; box-sizing: border-box">{{ selectedDate }}</button>
+        <picker mode="date" hidden="{{ !showPicker }}" bindchange="onDateChange" style="width: 746rpx; height: 15rpx; display: block; box-sizing: border-box">
+            <view class="picker-value" style="position: relative; left: -54rpx; top: -90rpx; width: 804rpx; height: 99rpx; display: block; box-sizing: border-box">{{selectedDate}}</view>
+        </picker>
+    </view>
+    <view class='cu-bar' style="width: 750rpx; height: 17rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">
+        <text class="color3" style="position: relative; left: 10rpx; top: 18rpx">平均心率</text>
+    </view>
+    <view class='cu-bar' style="width: 750rpx; height: 17rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 12rpx">
+        <text class="text1" style="position: relative; left: 94rpx; top: 0rpx">次/分</text>
+    </view>
+    <view class="container" >
+        <image src="{{rateimg}}"></image>
+    </view>
+    <view class='cu-bar' style="width: 750rpx; height: 17rpx; display: flex; box-sizing: border-box; left: 10rpx; top: 0rpx">
+        <text class="color3" style="position: relative; left: 0rpx; top: 18rpx">今日睡眠</text>
+    </view>
+    <view class='cu-bar' style="width: 750rpx; height: 345rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">
+        <view class="list">
+            <view class="cardimage" style="width: 354rpx; height: 150rpx; display: block; box-sizing: border-box">
+                <view class="text1" style="margin-left: 35%;">
+                    {{}}次/分
+                </view>
+                <view class="text2" style="margin-left: 35%;">
+                    最高心率
+                </view>
+            </view>
+            <view class="cardimage">
+                <view class="text1" style="margin-left: 15%;">
+                    {{}}次/分
+                </view>
+                <view class="text2" style="margin-left: 15%;">
+                    最低心率
+                </view>
+            </view>
+            <view class="cardimage">
+                <view class="text1" style="margin-left: 35%;">
+                    {{}}次/分
+                </view>
+                <view class="text2" style="margin-left: 35%;">
+                    平均心率
+                </view>
+            </view>
+        </view>
+
+    </view>
+</view>

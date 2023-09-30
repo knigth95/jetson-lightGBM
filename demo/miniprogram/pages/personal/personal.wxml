@@ -1,0 +1,33 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+    <view  slot="content">个人资料</view>
+    </cu-custom>
+    <scroll-view class='cu-bar bg-white'  style="width: 750rpx; height: 561rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">
+  <view class="parent_catainer">
+    <view class="userItemListView" style="width: 750rpx; height: 542rpx; display: block; box-sizing: border-box">
+      <view class="my_priview_md" bindtap="name" style="position: relative; left: 0rpx; top: -26rpx">
+        <text>昵称</text>
+        <view class="arrow"></view>
+      </view>
+      <view class="my_priview_md" bindtap="sex" style="position: relative; left: 0rpx; top: -26rpx">
+        <text>性别</text>
+        <view class="arrow"></view>
+      </view>
+      <view class="my_priview_md" bindtap="number" style="position: relative; left: 0rpx; top: -26rpx">
+        <text>手机号</text>
+        <view class="arrow"></view>
+      </view>
+      <view class="my_priview_md" bindtap="birthday" style="position: relative; left: 0rpx; top: -26rpx">
+        <text>生日</text>
+        <view class="arrow"></view>
+      </view>
+      <view class="my_priview_md" bindtap="email" style="position: relative; left: 0rpx; top: -26rpx">
+        <text>邮箱</text>
+        <view class="arrow"></view>
+      </view>
+      <view class="my_priview_md" bindtap="location" style="position: relative; left: 0rpx; top: -26rpx">
+        <text>所在地</text>
+        <view class="arrow"></view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

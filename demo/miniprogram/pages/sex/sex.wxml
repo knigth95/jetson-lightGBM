@@ -1,0 +1,18 @@
+<scroll-view class='scbg' scroll-y='true'>
+    <cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+        <view slot="content">
+            <view class="arrow" bindtap="back"></view>
+            <text></text>
+        </view>
+    </cu-custom>
+    <view class="parent_catainer">
+        <view class="userItemListView">
+            <view class="my_priview_md" bindtap="change_man">
+                <text>男</text>
+            </view>
+            <view class="my_priview_md" bindtap="bind_woman" bindtap="change_woman">
+                <text>女</text>
+            </view>
+        </view>
+    </view>
+</scroll-view>

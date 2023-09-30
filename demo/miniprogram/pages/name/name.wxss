@@ -1,0 +1,7 @@
+/* pages/name/name.wxss */
+
+page {
+    background:#f0cdd8;
+    width: 100%;
+    height: 100%;
+  }

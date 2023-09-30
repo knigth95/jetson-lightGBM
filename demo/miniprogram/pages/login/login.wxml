@@ -1,0 +1,38 @@
+<scroll-view scroll-y class="scrollPage">
+    <cu-custom bgColor="bg-gradual-pink" >
+        <view slot="content">登录页面</view>
+    </cu-custom>
+    <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" wx:key>
+    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+    <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+  </swiper-item>
+</swiper>
+
+    <view class="container" style="width: 750rpx; height: 279rpx; display: flex; box-sizing: border-box">
+        <view class="parent_catainer">
+            <view class="page-body">
+                <form catchsubmit="formSubmit" catchreset="formReset">
+                    <view class="weui-cell weui-cell_input">
+                        <view class="cu-form-group" style="position: relative; left: 0rpx; top: 99rpx; opacity: 0.7">
+                            <view class="title"><text style="color:red;">* </text>用户名：</view>
+                            <input placeholder="请输入用户名" bindinput="inputName"></input>
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_input">
+                        <view class="cu-form-group" style="position: relative; left: 0rpx; top: 161rpx; opacity: 0.7">
+                            <view class="title"><text style="color:red;">* </text>密码：</view>
+                            <input placeholder="   请输入密码" bindinput="inputPassword"></input>
+                        </view>
+                    </view>
+                </form>
+            </view>
+        </view>
+        <view style="position: relative; right: 120rpx; top: 214rpx; font-size: 12px; color: deepskyblue; left: -165rpx" bindtap="forget">忘记密码</view>
+        <view style="position: relative; left: 181rpx; top: 179rpx; font-size: 12px; color: deepskyblue" bindtap="signup">立即注册</view>
+    </view>
+    <view class="flex padding justify-center" style="position: relative; left: 0rpx; top: 29vh">
+
+        <button style="width: 500rpx; position: relative; left: 0rpx; top: -204rpx" type="primary" class="cu-btn bg-pink margin-tb-sm lg" bindtap="loginEvent">登录</button>
+    </view>
+</scroll-view>

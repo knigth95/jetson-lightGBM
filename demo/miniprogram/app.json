@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/personal/personal",
+    "pages/updatepassword/updatepassword",
+    "pages/name/name",
+    "pages/sex/sex",
+    "pages/birthday/birthday",
+    "pages/email/email",
+    "pages/location/location",
+    "pages/signup/signup",
+    "pages/home/home",
+    "pages/number/number",
+    "pages/forget/forget",
+    "pages/sleepheath/sleepheath",
+    "pages/heartrate/heartrate",
+    "pages/sleeptime/sleeptime",
+    "pages/sleepingBeats/sleepingBeats",
+    "pages/day/day"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "Color UI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap21.json"
+}

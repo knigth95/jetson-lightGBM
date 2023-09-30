@@ -1,0 +1,41 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="/image/head.jpg" class="cu-avatar round" mode="widthFix" ></image>
+    <view class="text-xl" style="color:rgb(255,255,255);">测试
+      <text class="text-df"></text>
+    </view>
+    <image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+  <view class="padding flex text-center text-grey bg-white shadow-warp">
+    <view class="flex flex-sub flex-direction solid-right">
+      <navigator url="/pages/sleepheath/sleepheath" class="margin-top-sm"style="font-size: 40rpx;color:rgb(111, 125, 133);"> 睡眠状态</navigator>
+    </view>
+    <view class="flex flex-sub flex-direction solid-right">
+      <navigator url="/pages/sleeptime/sleeptime" class="margin-top-sm"style="font-size: 40rpx;color:rgb(111, 125, 133);"> 睡眠日志</navigator>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <navigator url="/pages/sleepingBeats/sleepingBeats" class="margin-top-sm"style="font-size: 40rpx;color:rgb(111, 125, 133);"> 睡眠心率</navigator>
+    </view>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius" >
+    <view class="cu-item arrow"bindtap="bind">
+      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+        <text class="cuIcon-formfill text-green"></text>
+        <text class="text-grey">个人资料</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow"bindtap="updatepassword">
+      <view class="content" bindtap="CopyLink" data-link="https://github.com/weilanwl/ColorUI">
+        <text class="cuIcon-github text-grey"></text>
+        <text class="text-grey">修改密码</text>
+      </view>
+    </view>
+    <view class="cu-item arrow"bindtap="logout">
+      <navigator class="content" url="/pages/about/test/list" hover-class="none">
+        <text class="cuIcon-creativefill text-orange"></text>
+        <text class="text-grey">退出登录</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

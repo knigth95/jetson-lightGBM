@@ -1,0 +1,115 @@
+.arrow{
+  width: 30rpx;
+  height: 30rpx;
+  border-top: 4rpx solid rgb(19, 19, 19);
+  border-right: 4rpx solid rgb(19, 19, 19);
+  /* 旋转45度 */
+  transform: rotate(225deg);
+  /* 调整位置 */
+  position: absolute;
+  left: 25rpx;
+  top: 90rpx;
+}
+/* 用户列表选项样式 */
+page {
+    background:#f0cdd8;
+    width: 100%;
+    height: 100%;
+  }
+   
+  
+   
+  .head_pic{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 60rpx;
+    background-color: #08cbb0;
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .my_priview_md2{
+    margin-top: 180rpx;
+    display: flex;
+    align-items: center;
+  }
+   
+  .inf_content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rpx;
+    align-items: flex-start;
+    justify-content: center;
+     color: #ffffff;
+     padding-bottom: 5rpx;
+  }
+   
+  .user_info{
+    text-align: left;
+    font-size: 32rpx;
+    font-weight: bold;
+    margin-bottom: 8rpx;
+  }
+   
+  .family_info_ct_phone{
+    text-align: center;
+    justify-content: center;
+    font-size: 28rpx;
+    margin-bottom: 2rpx;
+  }
+   
+  .family_info_ct{
+    text-align: center;
+    justify-content: center;
+    font-size: 28rpx;
+    margin-bottom: 2rpx;
+    width: 500rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    text-overflow: ellipsis;
+  }
+   
+  .userItemListView{
+    background: #fff;
+    padding: 0 0rpx;
+    margin: 24rpx 0;
+  }
+   
+  .userItemListView > view{
+    height: 94rpx;
+    line-height: 94rpx;
+    padding-left: 50rpx;
+    border-bottom: 1rpx solid #F1F1F1;
+    position: relative;
+  }
+   
+  /* 移除最后一个元素的下边框 */
+  .userItemListView > view:last-child{
+    border: none;
+  }
+   
+  .my_priview_md{
+    display: flex;
+    align-items: center;
+  }
+  
+   
+  .my_priview{
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 10rpx;
+  }
+   
+  .userItemListView text{
+    font-size: 30rpx;
+  }
+   
+  .last_view{
+     background:#f0f0f0;
+     width: 100%;
+     height:1200rpx;
+  }
+
+  

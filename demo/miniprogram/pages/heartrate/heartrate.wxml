@@ -1,0 +1,26 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="content">
+    <view class="arrow" bindtap="back"></view>
+    <text>睡眠心率</text>
+  </view>
+</cu-custom>
+<view class="container">
+  <view class="title" style="position: relative; left: -209rpx; top: 19rpx">睡眠心率变化</view>
+  <view class="sleep-info" style="width: 228rpx; height: 427rpx; display: flex; box-sizing: border-box; position: relative; left: 235rpx; top: -29rpx">
+    <view class="cu-capsule round">
+      <view class="cu-tag bg-blue ">
+        心率
+      </view>
+      <view class="cu-tag line-blue">
+        {{rate}}
+      </view>
+    </view>
+  </view>
+  <image class="sleep-icon" src="{{rateimg}}" mode="aspectFit" style="position: relative; left: 0rpx; top: -352rpx; width: 462rpx; height: 427rpx; display: block; box-sizing: border-box"></image>
+</view>
+<view class="date-view" style="position: relative; left: 0rpx; top: -380rpx; width: 750rpx; height: 141rpx; display: block; box-sizing: border-box">
+  <button class="date-button" bindtap="showDatePicker" style="position: relative; left: 0rpx; top: 1rpx">{{ selectedDate }}</button>
+  <picker mode="date" hidden="{{ !showPicker }}" bindchange="onDateChange">
+    <view class="picker-value" style="position: relative; left: -54rpx; top: -141rpx; width: 804rpx; height: 141rpx; display: block; box-sizing: border-box"></view>
+  </picker>
+</view>

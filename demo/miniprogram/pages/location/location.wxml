@@ -1,0 +1,25 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+    <view  slot="content">
+        <view class="arrow" bindtap="back"></view>
+        <text></text>
+    </view>
+    </cu-custom>
+<view class="container">
+  <view class="parent_catainer">
+    <view class="page-body">
+
+        <form catchsubmit="formSubmit" catchreset="formReset">
+            <view class="weui-cell weui-cell_input">
+                <view class="cu-form-group" style="position: relative; left: 0rpx; top: 25vh; opacity: 0.7">
+                    <view class="title"><text style="color:red;">* </text>所在地：</view>
+                    <input placeholder="请输入所在地" bindinput="getlocation"></input>
+                </view>
+            </view>
+            <view class="flex padding justify-center" style="position: relative; left: 0rpx; top: 68rpx">
+
+                <button style="width:400rpx;top:28vh;" type="primary" class="cu-btn bg-pink margin-tb-sm lg" bindtap="change">提交</button>
+            </view>
+        </form>
+    </view>
+  </view>
+</view>

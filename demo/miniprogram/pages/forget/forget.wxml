@@ -1,0 +1,31 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+    <view  slot="content">
+        <view class="arrow" bindtap="back"></view>
+        <text>忘记密码</text>
+    </view>
+    </cu-custom>
+<view class="container">
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="weui-cell weui-cell_input">
+        <view class="cu-form-group" style="position: relative; left: 0rpx; top: 21vh; opacity: 0.7">
+          <view class="title"><text style="color:red;">* </text>用户名：</view>
+          <input placeholder="请填写用户名" bindinput="name"></input>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="cu-form-group" style="position: relative; left: 0rpx; top: 22vh; opacity: 0.7">
+          <view class="title"><text style="color:red;">* </text>手机号：</view>
+          <input placeholder="请填写手机号" bindinput="number"></input>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_input ">
+        <view class="cu-form-group" style="position: relative; left: 0rpx; top: 23vh; opacity: 0.7">
+          <view class="title"><text style="color:red;">* </text>新密码：</view>
+          <input placeholder="请填写新密码" bindinput="getpassword"></input>
+        </view>
+      </view>
+    </form>
+  </view>
+  <button style="width: 400rpx; top: 327rpx; position: relative; left: -2rpx ;top:24vh" type="primary" class="cu-btn bg-pink margin-tb-sm lg" bindtap="change">提交</button>
+</view>

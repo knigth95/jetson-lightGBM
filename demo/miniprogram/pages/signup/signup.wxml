@@ -1,0 +1,37 @@
+  <cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+    <view  slot="content">
+        <view class="arrow" bindtap="back"></view>
+        <text>注册页面</text>
+    </view>
+</cu-custom>
+<view class="container">
+  <view class="parent_catainer">
+    <view class="page-body">
+
+        <form catchsubmit="formSubmit" catchreset="formReset">
+            <view class="weui-cell weui-cell_input">
+                <view class="cu-form-group" style="position: relative; left: 0rpx; top: 324rpx; opacity: 0.7">
+                    <view class="title"><text style="color:red;">* </text>用户名：</view>
+                    <input placeholder="   请输入用户名" bindinput="getname"></input>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+              <view class="cu-form-group" style="position: relative; left: 0rpx; top: 357rpx; opacity: 0.7">
+                <view class="title" ><text style="color:red;">* </text>密码：</view>
+                <input placeholder="      请输入密码" bindinput="getpassword"></input>
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+            <view class="cu-form-group" style="position: relative; left: 0rpx; top: 392rpx; opacity: 0.7">
+                <view class="title" ><text style="color:red;">* </text>确认密码：</view>
+                <input placeholder="请确认密码" bindinput="confirm"></input>
+            </view>
+            </view>
+            <view class="flex padding justify-center" style="position: relative; left: 0rpx; top: 97rpx; width: 563rpx; height: 97rpx; display: flex; box-sizing: border-box">
+
+                <button style="width:400rpx;top:28vh;" type="primary" class="cu-btn bg-pink margin-tb-sm lg" bindtap="submit">注册</button>
+            </view>
+        </form>
+    </view>
+  </view>
+</view>

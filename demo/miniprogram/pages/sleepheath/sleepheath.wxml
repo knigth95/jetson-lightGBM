@@ -1,0 +1,45 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="content">
+    <view class="arrow" bindtap="back"></view>
+    <text>睡眠状态</text>
+  </view>
+</cu-custom>
+<scroll-view scroll-y class="scrollPage">
+  <view class="container" style="width: 718rpx; height: 840rpx; display: flex; box-sizing: border-box; position: relative; left: 17rpx; top: 36rpx">
+    <view class="date-view" style="position: relative; left: 0rpx; top: 55rpx; height: 132rpx; width: 638rpx">
+      <button class="date-button" bindtap="showDatePicker" style="position: relative; left: 0rpx; top: -8rpx; width: 638rpx; height: 132rpx; display: block; box-sizing: border-box；">{{ selectedDate }}</button>
+      <picker mode="date" hidden="{{ !showPicker }}" bindchange="onDateChange" style="width: 746rpx; height: 26rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -57rpx">
+        <view class="picker-value" style="position: relative; left: 0rpx; top: -915rpx; width: 804rpx; height: 141rpx; display: block; box-sizing: border-box"></view>
+      </picker>
+    </view>
+    <view class="module" style="width: 122rpx; height: -249rpx; display: block; box-sizing: border-box; position: relative; left: -258rpx; top: 201rpx">
+      <view class="number" style="position: relative; left: 33rpx; top: -55rpx">{{sleepage}}</view>
+      <view class="text" style="width: 188rpx; height: 43rpx; display: block; box-sizing: border-box; left: -33rpx; top: -34rpx; position: relative">睡眠年龄</view>
+    </view>
+    <view class="module" style="position: relative; left: 225rpx; top: 31rpx">
+      <view class="number">{{efficiency}}%</view>
+      <view class="text" style="position: relative; left: 0rpx; top: 31rpx">睡眠效率</view>
+    </view>
+    <image class="sleep-icon" src="/image/head.jpg" mode="aspectFit" style="position: relative; left: -29rpx; top: -98rpx; width: 150rpx; height: 181rpx; display: block; box-sizing: border-box"></image>
+    <image src="{{timeimg}}" style="width: 718rpx; height: 361rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx"></image>
+  </view>
+  <view class="container" style="width: 718rpx; height: 840rpx; display: flex; box-sizing: border-box; position: relative; left: 17rpx; top: 83rpx">
+    <text class="title" style="position: relative; left: -207rpx; top: -134rpx">睡眠基础数据</text>
+    <view class="module1" style="position: relative; left: -207rpx; top: -155rpx; width: 115rpx; height: 106rpx; display: block; box-sizing: border-box">
+      <view class="text1">入睡时长</view>
+      <view class="number1">{{sleeptime}}h</view>
+    </view>
+    <view class="module1" style="position: relative; left: 158rpx; top: -261rpx; width: 115rpx; height: 106rpx; display: block; box-sizing: border-box">
+      <view class="text1">深睡时长</view>
+      <view class="number1">{{deepsleeptime}}h</view>
+    </view>
+    <view class="module1" style="position: relative; left: -207rpx; top: -261rpx; width: 115rpx; height: 106rpx; display: block; box-sizing: border-box">
+      <view class="text1" style="width: 200rpx; height: 61rpx; display: block; box-sizing: border-box">有效睡眠时长</view>
+      <view class="number1" style="position: relative; left: 0rpx; top: -20rpx">{{effectivetime}}h</view>
+    </view>
+    <view class="module1" style="position: relative; left: 158rpx; top: -366rpx; width: 115rpx; height: 106rpx; display: block; box-sizing: border-box">
+      <view class="text1">深睡比例</view>
+      <view class="number1">{{deepwaterratio}}%</view>
+    </view>
+  </view>
+</scroll-view>
