@@ -1,5 +1,5 @@
 # Jetson-lightGBM项目相关（部分）
-
+* [下一步探索](./GroupMeeting.md)
 ## 代码结构
 ```
 .
