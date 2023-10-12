@@ -42,20 +42,21 @@
 |       ├── app.wxss
 |       ├── envList.js
 |       └── sitemap.json
-└── main
+├── main
 |   ├── upload (内容上传客户端相关)
-|       │   ├── get_token.py
-|       │   ├── get_upload_url.py
-|       │   ├── parse_form.py
-|       │   └── upload.py
-|   ├── generate_distribution_features.py
-|   ├── lightGBM-test.py
+|       │   ├── get_token.py(令牌获取)
+|       │   ├── get_upload_url.py(报头传输)
+|       │   ├── parse_form.py(表单解析)
+|       │   ├── radar_sp_pbc_save_print.py(绘图并存储)
+|       └── └── upload.py(上传)
+|   ├── generate_distribution_features.py(生成新标签的训练数据)
+|   ├── lightGBM-test.py(测试主程序)
 |   ├── lightGBM.py
-|   ├── model_train2.py
-|   ├── radar_signal.py
-|   ├── radar_sp_pbc_print.py
-|   ├── tag_get.py
-|   └── tagChange.py
+|   ├── model_train2.py(训练新标签的模型)
+|   ├── radar_signal.py(处理雷达信号)
+|   ├── radar_sp_pbc_print.py(输出PBC分布图和频谱)
+|   ├── tag_get.py(旧标签处理)
+└── └── tagChange.py(新标签处理)
 
 
 ```
