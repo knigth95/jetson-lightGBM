@@ -68,3 +68,5 @@
 - radar_sp_pbc_print.py是用于输出PBC分布图和画频谱的代码
 - model_train2.py是用于训练模型的代码
 - upload中，get_token.py用于获取令牌，get_upload_url.py用于获取上传url，parse_form.py用于解析表单，upload.py用于上传文件
+
+* [系统使用说明](./系统使用说明.md)
