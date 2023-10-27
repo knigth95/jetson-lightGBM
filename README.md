@@ -51,12 +51,8 @@
 |       └── └── upload.py(上传)
 |   ├── generate_distribution_features.py(生成新标签的训练数据)
 |   ├── lightGBM-test.py(测试主程序)
-|   ├── lightGBM.py
-|   ├── model_train2.py(训练新标签的模型)
 |   ├── radar_signal.py(处理雷达信号)
-|   ├── radar_sp_pbc_print.py(输出PBC分布图和频谱)
-|   ├── tag_get.py(旧标签处理)
-└── └── tagChange.py(新标签处理)
+└── └──  radar_sp_pbc_print.py(输出PBC分布图和频谱)
 
 
 ```
